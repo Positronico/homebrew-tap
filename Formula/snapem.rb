@@ -1,17 +1,17 @@
 class Snapem < Formula
   desc "Zero-Trust npm/bun CLI for macOS Silicon"
   homepage "https://github.com/Positronico/snapem"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/Positronico/snapem/releases/download/v#{version}/snapem_#{version}_darwin_arm64.tar.gz"
-      sha256 "bc504cb00c7b14f737154b2c57a4c5283c6a6dff1ec99964f916535b5862fd43"
+      sha256 "104c40b426116d7977adf22fe92fd59eb57f1a37303cb5df55450c430e57ae35"
     end
     on_intel do
       url "https://github.com/Positronico/snapem/releases/download/v#{version}/snapem_#{version}_darwin_amd64.tar.gz"
-      sha256 "0b17eb4abc5fc13d6d84aa8cd78fba967c0c59033c347af0f85ae98c3accf29d"
+      sha256 "74d2f77c0f2190f959efb9fefa8bd5b865d598ef187011227138a42a84fbf162"
     end
   end
 
