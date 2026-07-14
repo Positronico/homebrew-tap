@@ -3,33 +3,33 @@
 #   brew install Positronico/tap/yahh
 #
 # Maintained manually: regenerate for each release with
-#   packaging/update-formula.sh v2.0.0 > Formula/yahh.rb
+#   packaging/update-formula.sh v2.1.0 > Formula/yahh.rb
 # from the Positronico/yahh repo. See its PUBLISHING.md.
 class Yahh < Formula
   desc "Per-project shell history realms for zsh and bash"
   homepage "https://github.com/Positronico/yahh"
-  version "2.0.0"
+  version "2.1.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/Positronico/yahh/releases/download/v#{version}/yahh_#{version}_darwin_arm64.tar.gz"
-      sha256 "dbdb15c34beab16fe8f5cfa6b777ae1126cc3d17cb68306e2c858b95644ea391"
+      sha256 "12f65db8e2db51638ff0c76c654dae43e9623c33aa6ded9ed50f7e779e77c1f0"
     end
     on_intel do
       url "https://github.com/Positronico/yahh/releases/download/v#{version}/yahh_#{version}_darwin_amd64.tar.gz"
-      sha256 "b2fdafb531312bfccbff426d3a54a68d18253c5d1aa9ae75004b234019443269"
+      sha256 "175918d9f35b02b571b1fba19d8afb99fa1b3944ad948c281662063e89cb7330"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/Positronico/yahh/releases/download/v#{version}/yahh_#{version}_linux_arm64.tar.gz"
-      sha256 "855d2563adfc125b1e64db9999fc8f22d099202afcc1bb577e9bdba86f7af5b7"
+      sha256 "44c1288c74882a6a0a8e0af250cc009bdc018bfd357c165e4af803cbb7bda551"
     end
     on_intel do
       url "https://github.com/Positronico/yahh/releases/download/v#{version}/yahh_#{version}_linux_amd64.tar.gz"
-      sha256 "d7e0fcbc73aef79eb80879687f6d33ac5c01c88b81afb971d489ea2e38d195ae"
+      sha256 "84eb3e45831f9b26f0fd39938779cc928a7c39cd9c8e6c31a5ecf2c7d12b4b46"
     end
   end
 
